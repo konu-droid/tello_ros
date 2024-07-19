@@ -152,5 +152,14 @@
             </plugin>
         </sensor>
     </gazebo>
+    <gazebo reference="base_link${suffix}">
+        <mu1>2.0</mu1>
+        <mu2>2.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>0.1</maxVel>
+        <fdir1>0 0 1</fdir1>
+    </gazebo>
 
 </robot>

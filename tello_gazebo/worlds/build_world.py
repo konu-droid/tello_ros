@@ -57,7 +57,7 @@ def build_world(name, markers):
     for marker in markers:
         world_file.write(f"""    <model name="marker{marker[0]}">
       <include>
-        <static>true</static>
+        <static>false</static>
         <uri>model://marker_{marker[0]}</uri>
       </include>
       <pose>{marker[1]} {marker[2]} {marker[3]} {marker[4]} {marker[5]} {marker[6]}</pose>
